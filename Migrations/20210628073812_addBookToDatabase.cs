@@ -12,7 +12,7 @@ namespace BookListRazor.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
                     Author = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
